@@ -1,15 +1,14 @@
 import 'package:flutter/material.dart';
+import 'package:stray_care/adoption_search.dart';
 
-import 'findpet.dart';
-
-class Find extends StatefulWidget {
-  const Find({Key? key}) : super(key: key);
+class Adopt extends StatefulWidget {
+  const Adopt({super.key});
 
   @override
-  State<Find> createState() => _FindState();
+  State<Adopt> createState() => _AdoptState();
 }
 
-class _FindState extends State<Find> {
+class _AdoptState extends State<Adopt> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -25,7 +24,7 @@ class _FindState extends State<Find> {
       body: Stack(
         children: [
           Positioned.fill(
-            child: Image.asset('assets/Rectangle 166.png', fit: BoxFit.cover),
+            child: Image.asset('assets/Rectangle 166j.png', fit: BoxFit.cover),
           ),
           Positioned(
             bottom: 20,
@@ -34,9 +33,9 @@ class _FindState extends State<Find> {
               style: ElevatedButton.styleFrom(backgroundColor:Color.fromRGBO(245, 184, 92, 1),
               fixedSize: Size(150, 20), ),
               onPressed: () {
-                Navigator.push(context, MaterialPageRoute(builder: (context)=>FindPet()));
+                Navigator.push(context, MaterialPageRoute(builder: (context)=>AdoptSearch()));
               },
-              child: Text("FIND",style: TextStyle(color: Colors.white),),
+              child: Text("ADOPT",style: TextStyle(color: Colors.white),),
             ),
           ),
         ],

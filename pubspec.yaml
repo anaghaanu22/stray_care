@@ -37,6 +37,7 @@ dependencies:
   cupertino_icons: ^1.0.2
   http: ^1.1.0
   fluttertoast: ^8.2.2
+  
 
 dev_dependencies:
   flutter_test:
@@ -68,6 +69,12 @@ flutter:
   - assets/Rectangle 233.png
   - assets/Rectangle 22.png
   - assets/Rectangle 166.png
+  - assets/download (2).png
+  - assets/Rectangle 166 a.png
+  - assets/Rectangle 166j.png
+  - assets/Rectangle 63.png
+  - assets/Rectangle 191.png
+  - assets/Rectangle 66.png
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware

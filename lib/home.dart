@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:stray_care/report.dart';
 import 'package:stray_care/user_profile.dart';
 
 import 'aboutus.dart';
+import 'adopt.dart';
 import 'find.dart';
 import 'helpline.dart';
 import 'notification.dart';
@@ -20,8 +22,11 @@ class _HomeState extends State<Home> {
       appBar: AppBar(
         backgroundColor: Color.fromRGBO(245, 184, 92, 1),
        actions: [
-  Image.asset(
-    'assets/Rectangle_28-removebg-preview.png'
+  Padding(
+    padding: const EdgeInsets.only(right:40.0),
+    child: Image.asset(
+      'assets/Rectangle_28-removebg-preview.png'
+    ),
   ),
 ],
 
@@ -101,7 +106,7 @@ class _HomeState extends State<Home> {
       ),
       Positioned(
         top: 20,
-        left: 60,
+        left: 40,
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
@@ -116,7 +121,7 @@ class _HomeState extends State<Home> {
             SizedBox(height: 20),
             ElevatedButton(
               onPressed: () {
-                // Add button functionality here
+                Navigator.push(context, MaterialPageRoute(builder: (context)=>Report()));
               },
               child: Text('REPORT',style: TextStyle(color: Colors.black),),
             ),
@@ -230,7 +235,7 @@ class _HomeState extends State<Home> {
             SizedBox(height: 20),
             ElevatedButton(
               onPressed: () {
-                // Add button functionality here
+                Navigator.push(context, MaterialPageRoute(builder: (context)=>Adopt()));
               },
               child: Text('ADOPT',style: TextStyle(color: Colors.black),),
             ),

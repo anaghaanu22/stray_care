@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
-import 'user_log.dart';
+import 'package:stray_care/welcome.dart';
+
 
 void main() {
   runApp(const MyApp());
@@ -33,7 +34,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: LogIn(),
+      home:Welcome(),
     );
   }
 }
